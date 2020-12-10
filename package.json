@@ -1,0 +1,40 @@
+{
+  "name": "nasr-parser",
+  "version": "1.0.0",
+  "description": "Parses FAA NASR subscription data into useful formats",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app.js",
+    "start-dev": "nodemon --exec babel-node app.js",
+    "sct2": "npm run _clearOutputDirectory && node app",
+    "_clearOutputDirectory": "echo \"Not clearing output directory.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vZMA/nasr-parser.git"
+  },
+  "keywords": [
+    "nasr",
+    "sct2",
+    "vatsim",
+    "vatusa",
+    "parser",
+    "sector"
+  ],
+  "author": "Erik Quinn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vZMA/nasr-parser/issues"
+  },
+  "homepage": "https://github.com/vZMA/nasr-parser#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
